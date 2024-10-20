@@ -29,7 +29,19 @@ class EntrepriseAuthController extends Controller
             'service' => 'required|string|max:255',
             'adresse' => 'required|string|max:255',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', 
+        ], 
+        [
+            'nom_user.required' => 'Le nom utilisateur est requis.',
+            'email.required' => 'L\'email doit etre requis.',
+            'password.required' => 'Le mot de passe est requis et max 8 chiffres.',
+            'phone.required' => 'Le numero est obligatoire.',
+            'adresse.required' => 'L\'adresse est requis.',
+            'nom_entreprise.required' => 'Le nom est requis.',
+            'service.required' => 'La commune est requise.',
+            //'region.required'=>'La region est requise',
         ]);
+        
+    
 
 
         if ($request->hasFile('avatar')) {

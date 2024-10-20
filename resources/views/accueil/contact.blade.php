@@ -56,8 +56,16 @@
         <div class="container">
             <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="/"><img src="assets2/images/logo/logo.png" alt="" title="" /></a>
+                <a href="/"><img src="assets2/images/logo/logo.jpg" alt="" class="small-logo" title="" /></a>
             </div>
+             <style>
+
+                .small-logo {
+                    width: 60px;
+                    height: auto;
+                    color:gray;
+
+                }</style>
             <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/">Accueil</a></li>

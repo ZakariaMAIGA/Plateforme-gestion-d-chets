@@ -56,8 +56,15 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a href="/"><img src="assets2/images/logo/logo.png" alt="" title="" /></a>
+                    <a href="/"><img src="assets2/images/logo/logo.jpg" alt="" class="small-logo" title="" /></a>
                 </div>
+                 <style>
+                .small-logo {
+                    width: 60px;
+                    height: auto;
+                    color:gray;
+
+                }</style>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/">Accueil</a></li>
@@ -101,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1> A propos de nous</h1>
-                    <a href="/about">Accueil</a> <span>|</span> <a href="about.html">A propos de nous</a>
+                    <a href="/about">Accueil</a> <span>|</span> <a href="/about">A propos de nous</a>
                 </div>
             </div>
         </div>

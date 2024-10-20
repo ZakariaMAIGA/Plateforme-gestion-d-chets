@@ -4,13 +4,14 @@
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
             <a href="/" class="logo">
-              <img
+              <img src="{{asset('assets/img/logo.jpg')}}" style="width: 50px; height: auto; border-radius: 50%; object-fit: cover"  alt="Logo" />
                 
-              /><!----J'ai enleve le logo de ici  Je vais chercher un logo en attendant-->
-              <p>
+            
+              <!----J'ai enleve le logo de ici  Je vais chercher un logo en attendant-->
+              {{-- <p>
         <span style="color: white; font-weight: bold; font-size: 20px;  font-family: Arial;">
           <span style="color: blue;">g</span>est<span style="color: blue;">d</span>echets
-    </p>
+    </p> --}}
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">

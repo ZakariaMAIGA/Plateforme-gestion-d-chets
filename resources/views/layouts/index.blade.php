@@ -116,56 +116,56 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-dark">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Signals en cours </h4>
+                      <h4 class="mb-0 text-white">Signals en cours </h4>
                     </div>
                      
                   </div>
                   <!-- project number -->
                   <div>
                      
-                    <p class="mb-0"><span class="text-dark me-2">{{ $nombreSignalementsEnCours}}</span><span style="color: red;">En cours</span></p>
+                    <p class="mb-0"><span class="text-white me-2">{{ $nombreSignalementsEnCours}}</span><span style="color: white;">En cours</span></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-danger">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Siganls en attentes</h4>
+                      <h4 class="mb-0 text-white">Siganls en attentes</h4>
                     </div>
                      
                   </div>
                   <!-- project number -->
                   <div>
                     
-                    <p class="mb-0"><span class="text-dark me-2">{{$nombreSignalementsEnAttente}}</span>En attentes</p>
+                    <p class="mb-0"><span class="text-white me-2">{{$nombreSignalementsEnAttente}}</span> <span class="text-white">En attentes</span></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-success">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0"> Siganls traités</h4>
+                      <h4 class="mb-0 text-white"> Siganls traités</h4>
                     </div>
                     
                   </div>
@@ -173,7 +173,7 @@
                   <div>
             
                    
-                     <p class="mb-0"><span class="text-dark me-2">{{ $nombreSignalementsTraites}}</span><span style="color: #28a745;">Traités</span></p>
+                     <p class="mb-0"><span class="text-white me-2">{{ $nombreSignalementsTraites}}</span><span style="color: white;">Traités</span></p>
                   </div>
                 </div>
               </div>
@@ -181,21 +181,21 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-primary">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0"> Nombre équipes</h4>
+                      <h4 class="mb-0 text-white"> Nombre équipes</h4>
                     </div>
                    
                   </div>
                   <!-- project number -->
                   <div>
                     
-                    <p class="mb-0"><span class="text-dark me-2">{{$nombreEquipe}}</span> Equipes</p>
+                    <p class="mb-0"><span class="text-white me-2">{{$nombreEquipe}}</span> <span class="text-white">Equipes</span></p>
                   </div>
                 </div>
               </div>

@@ -31,63 +31,63 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-primary text-white">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Signals envois </h4>
+                      <h4 class="mb-0 text-white">Signals envois </h4>
                     </div>
                      
                   </div>
                   <!-- project number -->
                   <div>
                      
-                    <p class="mb-0"><span class="text-dark me-2">{{ $signalementsCount}}</span>envois</p>
+                    <p class="mb-0"><span class="text-white me-2">{{ $signalementsCount}}</span><span class="text-white">envois</span></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-danger">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Siganls en attente</h4>
+                      <h4 class="mb-0 text-white">Siganls en attente</h4>
                     </div>
                      
                   </div>
                   <!-- project number -->
                   <div>
                     
-                    <p class="mb-0"><span class="text-dark me-2"> {{$nombreSignalementsAttente}}</span><span style="color: red;">en attente</span></p>
+                    <p class="mb-0"><span class="text-white me-2"> {{$nombreSignalementsAttente}}</span><span style="color: white;">en attente</span></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-dark">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Signals en cours </h4>
+                      <h4 class="mb-0 text-white">Signals en cours </h4>
                     </div>
                     
                   </div>
                   <!-- project number -->
                   <div>
             
-                    <p class="mb-0"><span class="text-dark me-2">{{ $nombreSignalementsCours}}</span><span style="color: blue;">en cours</span></p>
+                    <p class="mb-0"><span class="text-white me-2">{{ $nombreSignalementsCours}}</span><span style="color: white;">en cours</span></p>
                   </div>
                 </div>
               </div>
@@ -95,21 +95,21 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
               <!-- card -->
-              <div class="card rounded-3">
+              <div class="card rounded-3 bg-success">
                 <!-- card body -->
                 <div class="card-body">
                   <!-- heading -->
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Siganls traités</h4>
+                      <h4 class="mb-0 text-white">Siganls traités</h4>
                     </div>
                    
                   </div>
                   <!-- project number -->
                   <div>
                     
-                    <p class="mb-0"><span class="text-success me-2">{{$nombreSignalementsTraite}}</span><span style="color: #28a745;">traités</span> </p>
+                    <p class="mb-0"><span class="text-white me-2">{{$nombreSignalementsTraite}}</span><span style="color:white;">traités</span> </p>
                   </div>
                 </div>
               </div>
@@ -202,7 +202,7 @@
               </div>
             </div-->
            
-            <div class="row">
+            {{-- <div class="row">
               <div class="col-md-12">
                 <div class="card card-round">
                   <div class="card-header">
@@ -295,10 +295,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> --}}
            
           </div>
-
+        </div>
 @endsection
 
 

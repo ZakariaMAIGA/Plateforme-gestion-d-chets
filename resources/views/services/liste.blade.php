@@ -86,8 +86,8 @@
             <div class="col-md-4 mb-4">
                 <!-- Carte Bootstrap avec plus de design -->
                 <div class="card h-100 shadow-lg border-0">
-                    <div class="card-header text-white" style="background-color: #28a745;">
-                        <h5 class="card-title mb-0">{{ $service->entreprise->nom_entreprise }}</h5>
+                    <div class="card-header text-white" style="background-color:  #004466;">
+                        <h5 class="card-title mb-0 text-white">{{ $service->entreprise->nom_entreprise }}</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><i class="fas fa-info-circle"></i> <strong>Description :</strong> {{ $service->description }}</p>
