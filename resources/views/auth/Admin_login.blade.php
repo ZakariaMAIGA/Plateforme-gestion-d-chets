@@ -131,7 +131,8 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Connexion</span>
+                 <span class="app-brand-text demo text-body fw-bolder" style="text-transform: none;">Connexion</span>
+
                 </a>
               </div>
               <!-- /Logo -->
@@ -193,12 +194,12 @@
                 </div>
               </form>
 
-              <p class="text-center">
+              <!--p class="text-center">
                 <span>Vous n'avez pas de compte ?</span>
                 <a href="/registerAdmin">
                   <span>Créer un compte</span>
                 </a>
-              </p>
+              </p-->
             </div>
           </div>
           <!-- /Register -->

@@ -39,7 +39,7 @@
                 </div>
                 <!-- project number -->
                 <div>
-                    <p class="mb-0"><span class="text-white me-2">5</span><span style="color: White;">Clients</span></p>
+                    <p class="mb-0"><span class="text-white me-2">{{$residentsCount }}</span><span style="color: White;">Clients</span></p>
                 </div>
             </div>
         </div>

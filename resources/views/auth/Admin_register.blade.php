@@ -120,7 +120,7 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Creation de compte</span>
+                  <span class="app-brand-text demo text-body fw-bolder"style="text-transform: none;">Creation de compte</span>
                 </a>
               </div>
               <!-- /Logo -->

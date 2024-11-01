@@ -57,11 +57,11 @@
 
                              <span 
                                 @if($signalement->statut == 'en_attente') 
-                                    style="background-color: red;" 
+                                    style="background-color: red; color:white;" 
                                 @elseif($signalement->statut == 'en_cours') 
-                                    style="background-color: blue;" 
+                                    style="background-color: blue; color:white;" 
                                 @elseif($signalement->statut == 'traite') 
-                                    style="background-color: green;" 
+                                    style="background-color: green; color:white;" 
                                 @endif
                             >
                                 {{ ucfirst($signalement->statut) }}

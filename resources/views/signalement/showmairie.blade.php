@@ -66,8 +66,8 @@
                 <div class="form-group">
                   <label for="statut">Changer le Statut</label>
                   <select name="statut" id="statut" class="form-control" required>
-                    <option value="en_cours" {{ $signalement->statut == 'en_attente' ? 'selected' : '' }}>En Attente</option>
-                    <option value="en_attente" {{ $signalement->statut == 'en_cours' ? 'selected' : '' }}>En Cours</option>
+                    <option value="en_attente" {{ $signalement->statut == 'en_attente' ? 'selected' : '' }}>En Attente</option>
+                    <option value="en_cours" {{ $signalement->statut == 'en_cours' ? 'selected' : '' }}>En Cours</option>
                   </select>
                 </div>
                 <div class="row">

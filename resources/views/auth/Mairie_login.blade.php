@@ -131,7 +131,8 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Connexion</span>
+                  <span class="app-brand-text demo text-body fw-bolder" style="text-transform: none;">Connexion</span>
+
                 </a>
               </div>
               <!-- /Logo -->
