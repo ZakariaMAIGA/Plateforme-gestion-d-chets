@@ -500,6 +500,7 @@
     @yield('script')
     @yield('scripts')
     @yield('maps')
+    @yield('statistics')
    <!--Ce script derange un peu la responsive de mon table de bord et ma datatable-->
     <script src="{{ asset('vendors/scripts/script.min.js') }}"></script>
     <script src="{{ asset('vendors/scripts/process.js') }}"></script>

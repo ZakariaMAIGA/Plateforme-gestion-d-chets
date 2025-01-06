@@ -25,7 +25,7 @@ class ResidentAuthController extends Controller
             'email' => 'required|string|email|max:255|unique:comptes',
             'password' => 'required|string|min:8',
             //'password' => 'required|string|min:8|confirmed',
-            'phone' => 'required|string|max:8',
+            'phone' => 'required|string|min:8',
             'nom_resident' => 'required|string|max:255',
             'prenom_resident' => 'required|string|max:255',
             'adresse' => 'required|string|max:255',

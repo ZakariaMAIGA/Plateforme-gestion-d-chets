@@ -165,7 +165,7 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Mot de passe</label>
-                    <a href="auth-forgot-password-basic.html">
+                    <a href="#">
                       <small> Mot de passe oublier?</</small>
                     </a>
                   </div>
@@ -196,12 +196,12 @@
                 </div>
               </form>
 
-              <p class="text-center">
+              <!--p class="text-center">
                 <span>Vous n'avez pas de compte ?</span>
                 <a href="/registerMairie">
                   <span>Créer un compte</span>
                 </a>
-              </p>
+              </p-->
             </div>
           </div>
           <!-- /Register -->

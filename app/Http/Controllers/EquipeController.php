@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Compte;
 use App\Models\Equipe;
 use App\Models\Mairie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 
 class EquipeController extends Controller
 {
@@ -15,13 +18,48 @@ class EquipeController extends Controller
     }
 
     public function store(Request $request){
-
+        //dd($request->all());
         $request->validate([
             'nom'=>'required|string|max:255',
             'phone'=>'required|string|min:8',
             'adresse'=>'required|string',
- 
+            // ajout des attributs du compte
+            // 'nom_user' => 'required|string|max:255',
+            // 'email' => 'required|string|email|max:255|unique:comptes',
+            // 'password' => 'required|string|min:8',
+            // 'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            ],
+            [
+                'nom_user.required' => 'Le nom utilisateur est requis.',
+                'email.required' => 'L\'email doit etre requis.',
+                'password.required' => 'Le mot de passe est requis et max 8 chiffres.',
+                'phone.required' => 'Le numero est obligatoire.',
+                'adresse.required' => 'L\'adresse est requis.',
+                'nom.required' => 'Le nom est requis.',  
         ]);
+     // Telechargement de l'image
+//      if ($request->hasFile('avatar')) {
+//         // Récupérer le fichier image
+//         $image = $request->file('avatar');
+//         // Générer un nom unique pour l'image
+//         $imageName = time().'_'.$image->getClientOriginalName();
+//         // Stocker l'image dans le répertoire 'public/images/avatars'
+//         $imagePath = $image->storeAs('images/avatars', $imageName, 'public');
+//     }
+ 
+//     // Création du compte du chef d'équipe
+//     $chefCompte = Compte::create([
+//         'nom_user' => $request->nom_user,
+//         'email' => $request->email,
+//         'password' => Hash::make($request->password),
+//         'phone' => $request->phone,
+//         'adresse' => $request->adresse,
+//         'type_compte_id' => 5, // Type "Chef d'équipe"
+//         'avatar' => $imagePath,
+//     ]);
+//    // Log::info('Compte chef créé avec succès.', ['id' => $chefCompte->id]);
+//     dd($chefCompte);
+
         $compte = Auth::guard('mairie')->user();
         $mairie = $compte->mairie;
         Equipe::create([
@@ -29,9 +67,11 @@ class EquipeController extends Controller
             'phone'=>$request->phone,
             'adresse'=>$request->adresse,
             'mairie_id' => $mairie->id,
+            //'compte_id' => $chefCompte, // Associe le chef d'équipe
         ]);
+        //dd($equipe);
         
-        return redirect()->route('equipe.index')->with('status', 'L\'equipe a ete bien cree');
+        return redirect()->route('equipe.index')->with('status', 'L\'equipe a été bien crée');
     }
 
 
@@ -90,7 +130,7 @@ class EquipeController extends Controller
         'nom'=>$request->nom,
         'phone'=>$request->phone,
         'adresse'=>$request->adresse,
-         'mairie_id' => $mairie->id,
+        'mairie_id' => $mairie->id,
 
     ]);
     

@@ -6,6 +6,7 @@ use App\Models\Equipe;
 use App\Models\Mairie;
 use App\Models\Signalement;
 use App\Models\TacheCollecte;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,6 +37,7 @@ class autoriteController extends Controller
 
         // Récupérer la mairie associée au compte
         $mairie = Mairie::where('compte_id', $compteId)->first();
+       // dd($mairie);
     
         // Récupérer le nombre total de signalements pour cette mairie
         $nombreTotalSignalements = Signalement::where('mairie_id', $mairie->id)->count();
@@ -54,14 +56,47 @@ class autoriteController extends Controller
       $nombreResidentsAvecSignalements = Signalement::where('mairie_id', $mairie->id)
                                                   ->distinct('resident_id') // On utilise distinct pour compter les résidents uniques
                                                   ->count('resident_id'); // Compter le nombre de résidents uniqu
+
+     $signalementsParMois = Signalement::selectRaw('MONTH(created_at) as mois, COUNT(*) as total')
+                                      ->where('mairie_id', $mairie->id)
+                                      ->whereYear('created_at', Carbon::now()->year)
+                                      ->where('statut', 'traite') // Filtrer par signalements gérés
+                                      ->groupByRaw('MONTH(created_at)')
+                                      ->get();
+
+
+ 
+
+    // Supposons que tu utilises Eloquent pour récupérer les données des signalements par mois
+    // Exemple : récupérer le nombre de signalements par mois
+   $signalements = Signalement::selectRaw('MONTH(created_at) as month, COUNT(*) as count')
+    ->where('mairie_id', $mairie->id) // Filtrer par l'ID de la mairie
+    ->whereYear('created_at', Carbon::now()->year) // Filtrer par année
+    ->groupBy('month')
+    ->orderBy('month')
+    ->get();
+
+// Initialise un tableau avec 12 mois
+$signalementsData = array_fill(1, 12, 0);
+
+// Remplir les données avec les résultats de la requête
+foreach ($signalements as $signalement) {
+    $signalementsData[$signalement->month] = $signalement->count;
+}
+
+// dd pour vérifier les données
+//dd($signalementsData);
+
         // Passer les données à la vue
-        return view('autorite.dashAutorite', compact('productivite', 'nombreTotalSignalements', 'nombreSignalementsTraites', 'nombreTachesAttribuees', 'equipesCount', 'nombreResidentsAvecSignalements'));
+        return view('autorite.dashAutorite', compact('productivite', 'nombreTotalSignalements', 
+        'nombreSignalementsTraites',
+         'nombreTachesAttribuees', 'equipesCount',
+          'nombreResidentsAvecSignalements',
+          'signalementsParMois',
+          'signalementsData',
+        ));
     }
 
 
-        //return view('autorite.dashAutorite', compact('signalementsCount', 'equipesCount', 'nombreTachesAttribuees'));
-       // return view('autorite.dashAutorite');
 
-
-    //}
 }

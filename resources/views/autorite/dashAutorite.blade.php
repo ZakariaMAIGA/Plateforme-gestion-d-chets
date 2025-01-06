@@ -10,10 +10,10 @@
                 <h3 class="fw-bold mb-3">Dashboard</h3>
                 <h4 class="op-7 mb-2">Suivi et Coordination des dechets</h4>
               </div>
-              <div class="ms-md-auto py-2 py-md-0">
+              {{-- <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Retour</a>
                 <a href="#" class="btn btn-primary btn-round">Voir plus...</a>
-              </div>
+              </div> --}}
             </div>
 
             <div class="row">
@@ -47,7 +47,7 @@
                   <!-- project number -->
                   <div>
                     <h1 class="fw-bold">{{ $nombreTotalSignalements }}</h1>
-                    <p class="mb-0"><span class="text-dark me-2"> </span><strong>Recus</strong></p>
+                    <p class="mb-0"><span class="text-dark me-2"> </span><strong>Reçus</strong></p>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                   <!-- project number -->
                   <div>
                     <h1 class="fw-bold">{{$nombreTachesAttribuees}}</h1>
-                    <p class="mb-0"><span class="text-dark me-2"></span><strong>Attribuees</strong></p>
+                    <p class="mb-0"><span class="text-dark me-2"></span><strong>Attribuées</strong></p>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@
                   <div class="d-flex justify-content-between align-items-center
                     mb-3">
                     <div>
-                      <h4 class="mb-0">Productivite</h4>
+                      <h4 class="mb-0">Productivité</h4>
                     </div>
                     <div class="icon-shape icon-md bg-light-primary text-primary
                       rounded-1">
@@ -128,70 +128,14 @@
             </div>
           </div>
              
-            {{-- <h4 class="pb-1 mb-4">Les signalements avec leurs descriptions </h4>
-              <div class="row mb-5">
-                <div class="col-md">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img class="card-img card-img-left" src="assets/img/1.jpg" alt="Img Dechet2" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Depot illegal</h5>
-                          <p class="card-text">
-                           Nous vous faisons d'un depot 
-                           des dechts dans notre quartier sabalibougou pres de la colline
-                
-                          </p>
-                          <p class="card-text"><small class="text-muted">Il y a 5 mois de cela</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Poubelle pleine</h5>
-                          <p class="card-text">
-                            Notre poubelle est pleine, nous avons besoin de service de recyclage aupres de vous.
-                          </p>
-                          <p class="card-text"><small class="text-muted">Il y a une semaine de cela</small></p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <img class="card-img card-img-right" src="assets/img/0.jpg" alt="Card image" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div> --}}
+            
             <div class="row">
               <div class="col-md-8">
                 <div class="card card-round">
                   <div class="card-header">
                     <div class="card-head-row">
-                      <div class="card-title">Statistiques de la gestion dechets</div>
+                      <div class="card-title">Statistiques des signalements reçus par mois</div>
                       <div class="card-tools">
-                        <a
-                          href="#"
-                          class="btn btn-label-success btn-round btn-sm me-2"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-pencil"></i>
-                          </span>
-                          Expoter
-                        </a>
-                        <a href="#" class="btn btn-label-info btn-round btn-sm">
-                          <span class="btn-label">
-                            <i class="fa fa-print"></i>
-                          </span>
-                          Imprimer
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -202,42 +146,32 @@
                     <div id="myChartLegend"></div>
                   </div>
                 </div>
+                
               </div>
+              
               <div class="col-md-4">
                 <div class="card card-primary card-round">
                   <div class="card-header">
                     <div class="card-head-row">
-                      <div class="card-title">Nombre Total</div>
+                      <div class="card-title">Nombre signals gérés par mois en ({{ now()->year }})</div>
                       <div class="card-tools">
                         <div class="dropdown">
-                          {{-- <button
-                            class="btn btn-sm btn-label-light dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Export
-                          </button> --}}
-                          {{-- <div
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton"
-                          >
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            > 
-                          </div> --}}
+                         
                         </div>
                       </div>
                     </div>
-                    <div class="card-category">25 Mars - Avril 02</div>
+                    {{-- <div class="card-category">25 Mars - Avril 02</div> --}}
                   </div>
                   <div class="card-body pb-0">
                     <div class="mb-4 mt-2">
-                      <h1>100</h1>
+                      <ul>
+          @foreach ($signalementsParMois as $signalement)
+            <li>
+              Mois de {{ \Carbon\Carbon::createFromFormat('m', $signalement->mois)->locale('fr')->translatedFormat('F') }} :
+              {{ $signalement->total }} signalements traités
+            </li>
+          @endforeach
+        </ul>
                     </div>
                     <div class="pull-in">
                       <canvas id="dailySalesChart"></canvas>
@@ -259,47 +193,100 @@
             </div>
             </div>
                
-              <!--div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-                <div class="col">
-                  <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/2.jpg" alt="Card image cap" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to additional content.
-                        This content is a little bit longer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/4.jpg" alt="Card image cap" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to additional content.
-                        This content is a little bit longer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/13.jpg" alt="Card image cap" />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to additional content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            
-          </div>
-        </div>
+@section('statistics')      
+ <script>
+//var signalementsData = @json($signalementsData);
+//var $signalementsData = [0, 0, 0, 0, 0, 0, 0, 0, 8, 4, 2];
+var signalementsData = @json($signalementsData);
+console.log(signalementsData);
+var ctx = document.getElementById('statisticsChart').getContext('2d');
+var statisticsChart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: ["Jan", "Fev", "Mar", "Avr", "Mai", "Jui", "Juil", "Aou", "Sep", "Oct", "Nov", "Dec"],
+		datasets: [{
+			label: "Signalements reçu par mois",
+			borderColor: '#177dff',
+			pointBackgroundColor: 'rgba(23, 125, 255, 0.6)',
+			pointRadius: 0,
+			backgroundColor: 'rgba(23, 125, 255, 0.4)',
+			legendColor: '#177dff',
+			fill: true,
+			borderWidth: 2,
+			 data: Object.values(signalementsData)
+		}]
+
+	},
+	options : {
+		responsive: true, 
+		maintainAspectRatio: false,
+		legend: {
+			display: false
+		},
+		tooltips: {
+			bodySpacing: 4,
+			mode:"nearest",
+			intersect: 0,
+			position:"nearest",
+			xPadding:10,
+			yPadding:10,
+			caretPadding:10
+		},
+		layout:{
+			padding:{left:5,right:5,top:15,bottom:15}
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					fontStyle: "500",
+					beginAtZero: false,
+					maxTicksLimit: 5,
+					padding: 10
+				},
+				gridLines: {
+					drawTicks: false,
+					display: false
+				}
+			}],
+			xAxes: [{
+				gridLines: {
+					zeroLineColor: "transparent"
+				},
+				ticks: {
+					padding: 10,
+					fontStyle: "500"
+				}
+			}]
+		}, 
+		legendCallback: function(chart) { 
+			var text = []; 
+			text.push('<ul class="' + chart.id + '-legend html-legend">'); 
+			for (var i = 0; i < chart.data.datasets.length; i++) { 
+				text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>'); 
+				if (chart.data.datasets[i].label) { 
+					text.push(chart.data.datasets[i].label); 
+				} 
+				text.push('</li>'); 
+			} 
+			text.push('</ul>'); 
+			return text.join(''); 
+		}  
+	}
+});
+
+var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+myLegendContainer.innerHTML = statisticsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+var legendItems = myLegendContainer.getElementsByTagName('li');
+for (var i = 0; i < legendItems.length; i += 1) {
+	legendItems[i].addEventListener("click", legendClickCallback, false);
+}
+
+        </script>
+        @endsection
 
           
 @endsection

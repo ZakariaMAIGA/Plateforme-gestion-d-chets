@@ -12,7 +12,7 @@ class Equipe extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'nom', 'phone', 'adresse', 'mairie_id',   
+        'nom', 'phone', 'adresse', 'mairie_id', 'compte_id',
     ];
 
     public function tachecollecte():HasMany
@@ -26,4 +26,10 @@ class Equipe extends Model
     {
         return $this->belongsTo(Mairie::class);
     }
+  //Relation entre compte et equipe
+    public function compte():BelongsTo
+    {
+        return $this->belongsTo(Compte::class, 'compte_id');
+    }
+
 }

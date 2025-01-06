@@ -29,5 +29,10 @@ class TypeCompteSeeder extends Seeder
           
             'libelle'=> 'Admin'
         ]);
-    }
+// Nouvel ajout
+        TypeCompte::create([
+          
+            'libelle'=> 'Equipe'
+        ]);
+}
 }

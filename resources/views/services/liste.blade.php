@@ -3,7 +3,7 @@
 @section('content')
  
     <div class="container">
-    <h2 class="text-center mb-5">Annuaire des services de recyclage</h2>
+    <h2 class="text-center mb-5 fw-bold">Annuaire des services de recyclage</h2>
 
     <!-- Grid pour les cartes -->
     <style>
@@ -87,7 +87,7 @@
                 <!-- Carte Bootstrap avec plus de design -->
                 <div class="card h-100 shadow-lg border-0">
                     <div class="card-header text-white" style="background-color:  #004466;">
-                        <h5 class="card-title mb-0 text-white">{{ $service->entreprise->nom_entreprise }}</h5>
+                        <h5 class="card-title mb-0 text-white text-center">{{ $service->entreprise->nom_entreprise }}</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><i class="fas fa-info-circle"></i> <strong>Description :</strong> {{ $service->description }}</p>

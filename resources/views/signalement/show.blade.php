@@ -1,59 +1,34 @@
 @extends('master')
 
 @section('content')
-<!--div class="container">
-    <h1>Détails du Signalement</h1>
-
-    <div class="card">
-        <div class="card-header">
-            <p><strong>Type de probleme :</strong>{{ $signalement->type_probleme }}</p>
-        </div>
-        <div class="card-body">
-            <p><strong>Description :</strong> {{ $signalement->description }}</p>
-            <p><strong>Date de Signalement :</strong> {{ $signalement->date_signalement->format('d/m/Y') }}</p>
-            <p><strong>Statut :</strong> {{ ucfirst($signalement->statut) }}</p>
-            <p><strong>Mairie Responsable :</strong> {{ $signalement->mairie->nom_mairie }}</p>
-           
-
-            <div class="form-group">
-                <p><strong>Photo du dechet :</strong></p>
-                <img src="{{ asset('storage/' . $signalement->photo) }}" alt="Photo du Signalement"  class="signalement-image" >
-            </div>
-
-            <a href="{{ route('signalements.index') }}" class="btn btn-primary mt-3">Retour à mes Signalements</a>
-        </div>
-    </div>
-</div-->
- 
 
 <div class="container h-90">
   <section class="vh-80" style="background-color: #f8f9fa;">
     <div class="row d-flex justify-content-center align-items-center h-80">
       <div class="col-xl-9">
 
-        <h2 class="text-black mb-4">Détails du Signalement</h2>
+        <h2 class="text-center text-black mb-4" style="font-family: 'Roboto', sans-serif; font-weight: 700;">Détails du Signalement</h2>
 
         <div class="card" style="border-radius: 15px;">
           <div class="card-body">
             <div class="card-body">
-            <p><strong>Type de problème :</strong> {{ $signalement->type_probleme }}</p>
-              <p><strong>Description :</strong> {{ $signalement->description }}</p>
-              <p><strong>Date de Signalement :</strong> {{ $signalement->date_signalement->format('d/m/Y') }}</p>
-              <p><strong>Statut :</strong>  <span 
+             <p ><strong style="font-size: 1.2rem; color: blue; margin-bottom: 1.5rem;">Type de problème :</strong> <span>{{ $signalement->type_probleme }}</span></p>
+              <p ><strong style="font-size: 1.2rem; color: blue; margin-bottom: 1.5rem;">Description :</strong> {{ $signalement->description }}</p>
+              <p><strong style="font-size: 1.2rem; color: blue; margin-bottom: 1.5rem;">Date de Signalement :</strong> {{ $signalement->date_signalement->format('d/m/Y') }}</p>
+              <p> <strong style="color: blue;"> Statut :</strong> <span style="padding: 5px 15px; border-radius: 5px; color: #fff; font-weight: bold; 
                                 @if($signalement->statut == 'en_attente') 
-                                    style="background-color: red;" 
+                                    background-color: red; 
                                 @elseif($signalement->statut == 'en_cours') 
-                                    style="background-color: blue;" 
+                                    background-color: blue;  
                                 @elseif($signalement->statut == 'traite') 
-                                    style="background-color: green;" 
-                                @endif
-                            >
+                                    background-color: green; 
+                                @endif">
                                 {{ ucfirst($signalement->statut) }}
                             </span></p>
-              <p><strong>Mairie Responsable :</strong> {{ $signalement->mairie->nom_mairie }}</p>
+              <p><strong style="font-size: 1.2rem; color: blue; margin-bottom: 1.5rem;">Mairie Responsable :</strong> {{ $signalement->mairie->nom_mairie }}</p>
 
               <div class="form-group mt-3">
-                <p><strong>Photo du déchet :</strong></p>
+                <p><strong style="font-size: 1.2rem; color: blue; margin-bottom: 1.5rem;">Photo du déchet :</strong></p>
                 <img src="{{ asset('storage/' . $signalement->photo) }}" alt="Photo du Signalement" class="signalement-image">
               </div>
 

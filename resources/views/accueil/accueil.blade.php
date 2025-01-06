@@ -147,22 +147,22 @@
                 <div class="row">
                     <div class="col-xl-2 col-lg-3">
                         <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">top products</h3>
+                            <h3 class="mb-4">Actions</h3>
                             <ul>
-                                <li class="mb-2"><a href="#">managed website</a></li>
-                                <li class="mb-2"><a href="#">managed reputation</a></li>
-                                <li class="mb-2"><a href="#">power tools</a></li>
-                                <li><a href="#">marketing service</a></li>
+                                <li class="mb-2"><a href="#">Signalement des dechets</a></li>
+                                <li class="mb-2"><a href="#">Gestion de signalements</a></li>
+                                <li class="mb-2"><a href="#">Proposition services</a></li>
+                                <li><a href="#">Gestion taches</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6">
                         <div class="single-widget-home mb-5 mb-lg-0">
-                            <h3 class="mb-4">newsletter</h3>
-                            <p class="mb-4">You can trust us. we only send promo offers, not a single.</p>  
+                            <h3 class="mb-4">nouveaux messages</h3>
+                            <p class="mb-4">Vous pouvez nous laisser un message ici !</p>  
                             <form action="#">
-                                <input type="email" placeholder="Your email here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email here'" required>
-                                <button type="submit" class="template-btn">subscribe now</button>
+                                <input type="email" placeholder="Votre email ici" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre email ici'" required>
+                                <button type="submit" class="template-btn">Soumettre</button>
                             </form>
                         </div>
                     </div>
@@ -170,14 +170,14 @@
                         <div class="single-widge-home">
                             <h3 class="mb-4">instagram feed</h3>
                             <div class="feed">
-                                <img src="assets2/images/feed1.jpg" alt="feed">
-                                <img src="assets2/images/feed2.jpg" alt="feed">
-                                <img src="assets2/images/feed3.jpg" alt="feed">
-                                <img src="assets2/images/feed4.jpg" alt="feed">
-                                <img src="assets2/images/feed5.jpg" alt="feed">
-                                <img src="assets2/images/feed6.jpg" alt="feed">
-                                <img src="assets2/images/feed7.jpg" alt="feed">
-                                <img src="assets2/images/feed8.jpg" alt="feed">
+                                <img src="assets2/images/1.jpeg" alt="feed">
+                                <img src="assets2/images/2.jpeg" alt="feed">
+                                <img src="assets2/images/3.jpeg" alt="feed">
+                                <img src="assets2/images/4.jpeg" alt="feed">
+                                <img src="assets2/images/5.jpeg" alt="feed">
+                                <img src="assets2/images/6.jpeg" alt="feed">
+                                <img src="assets2/images/7.jpeg" alt="feed">
+                                <img src="assets2/images/8.jpeg" alt="feed">
                             </div>
                         </div>
                     </div>
@@ -197,10 +197,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="col-lg-4 col-md-6">
                         <div class="social-icons">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://x.com/"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://bugherd.com/"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>

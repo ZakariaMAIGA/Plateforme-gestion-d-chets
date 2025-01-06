@@ -29,6 +29,16 @@ class AdminAuthController extends Controller
             'prenom' => 'required|string|max:255',
             'adresse' => 'required|string|max:255',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ],
+        [
+            'nom_user.required' => 'Le nom utilisateur est requis.',
+            'email.required' => 'L\'email doit etre requis.',
+            'password.required' => 'Le mot de passe est requis et max 8 chiffres.',
+            'phone.required' => 'Le numero est obligatoire.',
+            'adresse.required' => 'L\'adresse est requis.',
+            'nom.required' => 'Le nom est requis.',
+            'prenom.required' => 'Le prenom est requis.',
+           // 'type_compte.required'=>'Le type de compte est obligatoire',
         ]);
 
         if ($request->hasFile('avatar')) {

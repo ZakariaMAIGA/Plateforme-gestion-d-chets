@@ -4,13 +4,13 @@
 
 @section('content')
 <div class="container">
-<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+<section class="h-100 h-custom" style="background-color: rgba(128, 128, 128, 0.1);">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-8 col-xl-6">
         <div class="card rounded-3">
           <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Formulaire de Création de Tâche</h3>
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">Formulaire de Création de Tâche</h3>
 
             <form action="{{ route('tache.store') }}" method="POST" class="px-md-2">
               @csrf
@@ -42,7 +42,7 @@
               </div>
 
               <!-- Bouton de soumission -->
-              <button type="submit" class="btn btn-success btn-lg mb-1">Créer la tâche de collecte</button>
+              <button type="submit" class="btn btn-primary btn-lg mb-1">Créer la tâche</button>
             </form>
           </div>
         </div>

@@ -558,7 +558,7 @@
         }
       },
       xaxis: {
-        categories: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        categories: ['', 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui', 'Juil'],
         axisBorder: {
           show: false
         },

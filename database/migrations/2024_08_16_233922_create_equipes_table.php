@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('adresse');
             $table->foreignId('mairie_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
+           // $table->foreign('compte_id')->references('id')->on('comptes')->onDelete('cascade')->onUpdate('cascade');//relation avec le compte
             $table->timestamps();
         });
     }

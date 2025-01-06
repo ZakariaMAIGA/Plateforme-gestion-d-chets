@@ -79,5 +79,11 @@ class Compte extends Authenticatable //ajout
     {
         return $this->hasOne(Admin::class, 'compte_id');
     }
+
+    public function equipe()
+    {
+      return $this->hasOne(Equipe::class, 'compte_id');
+
+    }
 //}
 }//fin ajout

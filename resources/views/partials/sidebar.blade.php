@@ -8,10 +8,11 @@
                 
             
               <!----J'ai enleve le logo de ici  Je vais chercher un logo en attendant-->
-              {{-- <p>
+              <p>
         <span style="color: white; font-weight: bold; font-size: 20px;  font-family: Arial;">
-          <span style="color: blue;">g</span>est<span style="color: blue;">d</span>echets
-    </p> --}}
+          <span style="color: blue;">G</span>EST<span style="color: blue;">D</span>ECHET
+    </p>
+    
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
