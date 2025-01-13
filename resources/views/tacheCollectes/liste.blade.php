@@ -9,7 +9,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="d-flex align-items-center">
-                    <h4 class="card-title">La liste des taches de collectes</h4>
+                    <h4 class="card-title">La liste des tâches de collectes</h4>
                     <!-- <a href="/equipe/create" class="btn btn-primary btn-round ms-auto">
                         <i class="fa fa-plus"></i>
                         Ajouter
@@ -63,7 +63,7 @@
                                      <td>
                                     <span 
                                 @if($tache->statut == 'traite') 
-                                   style="background-color: green;"
+                                   style="background-color: green; color:white;"
                                 @endif
                             >
                                 {{ ucfirst($tache->statut) }}

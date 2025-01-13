@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="container h-90">
-  <section class="vh-80" style="background-color: #f7f9fb;">
+  <section class="vh-80" style="background-color: rgb(108, 117, 125);">
     <div class="row d-flex justify-content-center align-items-center h-80">
       <div class="col-md-8">
 
-        <h2 class="text-primary mb-4 fw-bold text-center">Créer un signalement</h2>
+        <h2 class="text-white mb-4 fw-bold text-center">Créer un signalement</h2>
 
        <div class="card shadow-lg" style="border-radius: 15px; background-color: #ffffff;">
           <div class="card-body">

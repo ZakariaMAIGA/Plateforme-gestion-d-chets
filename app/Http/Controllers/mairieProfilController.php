@@ -67,7 +67,7 @@ class mairieProfilController extends Controller
        // dd($mairie);
     
         // Mise à jour des informations du compte
-        $compte= new Compte();
+       // $compte= new Compte();
         $compte->email = $request->email;
         $compte->phone = $request->phone;
        // $compte->adresse = $request->adresse;

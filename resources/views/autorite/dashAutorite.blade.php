@@ -8,7 +8,7 @@
             >
               <div>
                 <h3 class="fw-bold mb-3">Dashboard</h3>
-                <h4 class="op-7 mb-2">Suivi et Coordination des dechets</h4>
+                <h4 class="op-7 mb-2">Suivi et Coordination des déchets</h4>
               </div>
               {{-- <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Retour</a>

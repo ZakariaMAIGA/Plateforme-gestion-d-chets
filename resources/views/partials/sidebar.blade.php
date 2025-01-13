@@ -44,7 +44,7 @@
                   <span class="caret"></span>
                   <a href="/accueil">
                 </a>
-                <div class="collapse" id="dashboard">
+                {{-- <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="/accueil">
@@ -52,7 +52,7 @@
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> --}}
               </li>
               <li class="nav-section">
                 <span class="sidebar-mini-icon">
@@ -60,38 +60,15 @@
                 </span>
                 
               </li>
-              <!--li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
-                  <i class="fas fa-users"></i>
-                  <p>Utilisateurs</p>
-                  <span class="caret"></span>
-                </a>
-                <div class="collapse" id="base">
-                  <ul class="nav nav-collapse">
-                    <li>
-                      <a href="/resident">
-                      <i class="fas fa-home"></i>
-                        <span class="sub-item">Residents</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/autorite">
-                        <i class="fas fa-building"></i>
-                        <span class="sub-item">Mairie</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/entreprise">
-                        <i class="fas fa-industry"></i>
-                        <span class="sub-item">Entreprises</span>
-                      </a>
-                    </li>
-                   
-                  </ul>
-                </div>
-              </li-->
-               {{-- Si l'utilisateur est un résident --}}
+               
                 @if(Auth::guard('resident')->check())
+                <li class="nav-item">
+                        <a href="/resident">
+                            <i class="fas fa-home"></i>
+                            <p>Tableau de bord</p>
+                        </a>
+                    </li>
+                 
                     <li class="nav-item">
                         <a href="/signalement">
                             <i class="fas fa-trash-alt"></i>
@@ -118,6 +95,12 @@
                     </li>
                 {{-- Si l'utilisateur est une mairie --}}
                 @elseif(Auth::guard('mairie')->check())
+                <li class="nav-item">
+                        <a href="/autorite">
+                            <i class="fas fa-home"></i>
+                            <p>Tableau de bord</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="/mairie/signalements">
                             <i class="fas fa-trash-alt"></i>
@@ -127,7 +110,7 @@
                     <li class="nav-item">
                         <a href="/taches">
                             <i class="fas fa-tasks"></i>
-                            <p>Gestion Taches</p>
+                            <p>Gestion Tâche</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -144,6 +127,12 @@
                     </li>
                 {{-- Si l'utilisateur est une entreprise --}}
                 @elseif(Auth::guard('entreprise')->check())
+                <li class="nav-item">
+                        <a href="/entreprise">
+                            <i class="fas fa-home"></i>
+                            <p>Tableau de bord</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="/services">
                             <i class="fas fa-recycle"></i>
@@ -164,6 +153,12 @@
                     </li>
                 {{-- Si l'utilisateur est un admin --}}
                 @elseif(Auth::guard('admin')->check())
+                <li class="nav-item">
+                        <a href="/accueil">
+                            <i class="fas fa-home"></i>
+                            <p>Tableau de bord</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="/comptes">
                             <i class="fas fa-users"></i>

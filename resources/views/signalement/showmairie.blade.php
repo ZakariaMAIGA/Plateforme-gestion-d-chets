@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="container py-5">
-  <section class="vh-80" style="background-color: #f8f9fa;">
+  <section class="vh-80" style="background-color: rgb(108, 117, 125);">
     <div class="row d-flex justify-content-center align-items-center h-80">
       <div class="col-lg-8">
-        <h2 class="text-center text-black mb-4" style="font-family: 'Roboto', sans-serif; font-weight: 700;">Détails du Signalement</h2>
+        <h2 class="text-center text-white mb-4" style="font-family: 'Roboto', sans-serif; font-weight: 700;">Détails du Signalement</h2>
         <div class="card shadow" style="border-radius: 15px;">
           <div class="card-body p-4">
             <div class="row mb-4">

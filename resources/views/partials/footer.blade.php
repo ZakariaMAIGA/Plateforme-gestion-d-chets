@@ -19,7 +19,7 @@
             </nav>
             <div class="copyright">
               2024, réalisé <i class="fa fa-heart heart text-danger"></i> par
-              <a href="#">Zakcprod.com</a>
+              <a href="#">Zackprod.com</a>
             </div>
             <div>
             Distribué par 

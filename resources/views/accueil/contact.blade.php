@@ -56,7 +56,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="/"><img src="assets2/images/logo/logo.jpg" alt="" class="small-logo" title="" /></a>
+                <a href="/"><img src="assets2/images/logo/logo.jpg"  style="width: 50px; height: auto; border-radius: 50%; object-fit: cover" class="small-logo" title="" /></a>
             </div>
              <style>
 
@@ -109,7 +109,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Contactez nous</h1>
-                <a href="/accueil">Accueil</a> <span>|</span> <a href="/contact">Contavtez nous?</a>
+                <a href="/accueil">Accueil</a> <span>|</span> <a href="/contact">Contactez nous?</a>
             </div>
         </div>
     </div>

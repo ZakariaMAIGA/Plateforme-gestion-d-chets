@@ -322,19 +322,19 @@
                                         @endif
                                     </div>
                                     <div class="u-text">
-                                        <a href="#" class="btn btn-xs btn-secondary btn-sm">Voir Profil</a>
+                                        {{-- <a href="#" class="btn btn-xs btn-secondary btn-sm">Voir Profil</a> --}}
                                     </div>
                                 </div>
                             </li>
                     <li>
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Mon Profile</a>
+                                            {{-- <a class="dropdown-item" href="#">Mon Profile</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Parametre du compte</a>
-                                            <div class="dropdown-divider"></div>
+                                            <div class="dropdown-divider"></div> --}}
                                             <form action="{{ route('logout') }}" method="POST">
                                                 @csrf
-                                                    <button type="submit" class="dropdown-item">Se déconnecter</button>
+                                                    <button type="submit" class="dropdown-item btn-secondary text-center fw-bold">Se déconnecter</button>
                                                 </form>
 
                                           </li>

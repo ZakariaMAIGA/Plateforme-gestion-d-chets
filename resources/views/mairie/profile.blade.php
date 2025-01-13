@@ -131,9 +131,12 @@
 
                             <!-- Bouton de mise à jour -->
                             <div class="form-group text-center">
-                                <button type="submit" class="btn btn-primary px-5">Mettre à jour</button>
-                            </div>
-                        </form>
+    <!-- Boutons Retour et Mettre à jour -->
+<div class="form-group d-flex justify-content-between">
+    <a href="{{ url()->previous() }}" class="btn btn-secondary">Retour</a>
+    <button type="submit" class="btn btn-primary px-5">Mettre à jour</button>
+</div>
+                 </form>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Page Title -->
-    <title>Plate-forme de gestion des dechets</title>
+    <title>Plate-forme de gestion des déchets</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets2/images1/logo/favicon.png" type="image/x-icon">
@@ -56,7 +56,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between d-flex">
                 <div id="logo">
-                    <a href="/"><img src="assets2/images/logo/logo.jpg" alt="" class="small-logo" title="" /></a>
+                    <a href="/"><img src="assets2/images/logo/logo.jpg"  style="width: 50px; height: auto; border-radius: 50%; object-fit: cover" title="" /></a>
                 </div>
                 <style>
 
@@ -109,8 +109,8 @@
             <div class="row">
                 <div class="col-lg-5">
                     <h4>Bienvenue sur ! </h4>
-                    <h1> La plate-forme de gestion rapide des dechets </h1>
-                    <p>Pour mieux gerer vos dechets et avoir un environnement sein et propre, rejoignez nous sur cette plate-forme. </p>
+                    <h1> La plate-forme de gestion rapide des déchets </h1>
+                    <p>Pour mieux gerer vos déchets et avoir un environnement sein et propre, rejoignez nous sur cette plate-forme. </p>
                     <a href="" class="template-btn mt-3">Savoir plus</a>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                         <div class="single-widget-home mb-5 mb-lg-0">
                             <h3 class="mb-4">Actions</h3>
                             <ul>
-                                <li class="mb-2"><a href="#">Signalement des dechets</a></li>
+                                <li class="mb-2"><a href="#">Signalement des déchets</a></li>
                                 <li class="mb-2"><a href="#">Gestion de signalements</a></li>
                                 <li class="mb-2"><a href="#">Proposition services</a></li>
                                 <li><a href="#">Gestion taches</a></li>
